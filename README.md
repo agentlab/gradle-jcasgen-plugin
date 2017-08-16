@@ -20,7 +20,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.dictanova.jcasgen.gradle:gradle-jcasgen-plugin:0.4"
+    classpath "gradle.plugin.com.dictanova.jcasgen.gradle:gradle-jcasgen-plugin:3.0"
   }
 }
 

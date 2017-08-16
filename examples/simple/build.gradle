@@ -2,14 +2,15 @@
 buildscript {
     repositories {
         jcenter()
+		mavenLocal()
     }
     dependencies {
-        classpath 'com.dictanova.jcasgen.gradle:gradle-jcasgen-plugin:0.1'
+        classpath 'com.dictanova.jcasgen.gradle:gradle-jcasgen-plugin:3.0'
     }
 }
 // Enable plugins
 apply plugin: 'java'
-apply plugin: 'jcasgen'
+apply plugin: 'com.dictanova.jcasgen'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 

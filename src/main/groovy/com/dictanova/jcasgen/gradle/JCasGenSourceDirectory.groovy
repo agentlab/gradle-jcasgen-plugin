@@ -35,8 +35,9 @@ class JCasGenSourceDirectory {
     def SourceDirectorySet jcasgen
 
     JCasGenSourceDirectory(String parentDisplayName, FileResolver fileResolver) {
-        jcasgen = new DefaultSourceDirectorySet("${parentDisplayName} JCasGen source", fileResolver, new DefaultDirectoryFileTreeFactory())
-        jcasgen.filter.include("**/*_TS.xml")
+		def ftf = new DefaultDirectoryFileTreeFactory()
+        jcasgen = new DefaultSourceDirectorySet("${parentDisplayName} JCasGen source", fileResolver, ftf)
+        jcasgen.filter.include("**/*.xml")
     }
 
     /**
