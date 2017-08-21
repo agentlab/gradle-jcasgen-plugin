@@ -42,6 +42,6 @@ $ gradle build
 ## Build
 If you want to build this plugin from a Git checkout, please use Gradle Wrapper :
 ```
-./gradlew clean build install
+./gradlew clean publishToMavenLocal
+not ./gradlew clean build install
 ```
-
